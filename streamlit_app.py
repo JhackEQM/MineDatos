@@ -1,5 +1,5 @@
 # streamlit_app.py
-pip install joblib
+!pip install joblib
 import streamlit as st
 import pandas as pd
 import joblib
@@ -99,6 +99,7 @@ with tab3:
 
     st.subheader("Distribución de Glucosa")
     st.plotly_chart(px.histogram(df, x="glu", color="type", barmode="overlay", nbins=40, labels={"type": "Diabetes (1=Sí)"}), use_container_width=True)
+
 
 
 
